@@ -17,6 +17,12 @@ delete Head;
 Head=temp; 
 }
 }
+void List::Add(int x) 
+{ 
+element *temp=new element; 
+temp->x=x; 
+temp->Next=Head; 
+Head=temp;
 }
  
 void List::Show() 
